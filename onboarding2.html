@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Raleway:wght@300;400&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <div class="SignupImg">
+        <img src="images/logo-blue.png" alt="logo" style="width:50%">
+    </div>
+
+    <div class="OnboardingContent">
+        <img src="images/onboarding2.png" alt="onboardingimg" style="width:90%">
+        <h2>Swipe Through Potential Puppy Pals!</h2>
+        <p>Scroll and meet your new buddy. Swipe left if you're not feeling it, or <br> right if you like what you see!</p>
+        <img src="images/Ellipses2.png" alt="Ellipses" style="margin-top: 20px;">
+    </div>
+
+
+    <script>
+        document.querySelector('body').addEventListener('touchstart', handleTouchStart);
+        document.querySelector('body').addEventListener('touchmove', handleTouchMove);
+
+        var xDown = null;
+
+        function getTouches(ev) {
+            return ev.touches;
+        }
+
+        function handleTouchStart(ev) {
+            const firstTouch = getTouches(ev)[0];
+            xDown = firstTouch.clientX;
+            console.log(xDown);
+        }
+
+        function handleTouchMove(ev) {
+            if( !xDown){
+                return;
+            }
+
+            var xUp = ev.touches[0].clientX;
+
+            var xDiff = xDown-xUp;
+
+            if(xDiff >=100){
+                location.href= 'onboarding3.html';
+            }
+            if(xDiff <=-100){
+                location.href= 'onboarding1.html';
+            }
+        }
+        xDown = null;
+
+    </script>
+
+
+</body>
+
+</html>

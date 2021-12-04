@@ -1,0 +1,87 @@
+@media screen and (max-width:600px){
+    .splash{
+        background-color: #E27033;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        text-align: center;
+        height: 100vh;
+    }
+
+    .SignupImg{
+       
+        text-align: center;
+        margin-bottom: -5px;
+        font-family: 'Poppins', sans-serif;
+        color: #797777;
+    }
+
+    .signupTxt{
+        background-color: #E27033;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        text-align: center;
+        height: 50vh;
+      
+        
+    }
+
+    .headerMargin{
+        margin-top: 0;
+    }
+
+    a.link{
+        text-decoration: none;
+    }
+
+    .splashbtn{
+        background-color: white;
+        font-family: 'Poppins', sans-serif;
+        border: white;
+        border-radius: 50px;
+        padding: 12px 28px;
+        width: 80%;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: medium;
+        margin-top: 30px;
+    }
+    .splashbtn:active{
+        background-color: #3E92CC;
+    }
+
+    .signUp{
+        font-family: 'Poppins', sans-serif;
+        width: 80%;
+        padding-left: 40px;
+    }
+
+    .input{
+        padding: 4px 8px;
+        border-width: 1.5px;
+    }
+
+    .signUpBtn{
+        background-color: #E27033;
+        font-family: 'Poppins', sans-serif;
+        border: white;
+        border-radius: 50px;
+        padding: 12px 28px;
+        width: 80%;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: medium;
+        margin-top: 15px;
+        color:white;
+    }
+
+    .signUpBtn:active{
+        background-color: #3E92CC;
+    }
+
+    .OnboardingContent{
+        text-align: center;
+      
+        font-family: 'Poppins', sans-serif;
+        
+    }
+}
