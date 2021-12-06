@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Raleway:wght@300;400&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <div class="SignupImg">
+
+        <img class="SurveyImg" onClick="location.href= 'survey2.html';" src="images/progress3.png" alt="progressbar" style="width:70%; padding-top: 20px;">
+        <p class="SurveyImg">Skip</p>
+    </div>
+
+    <div class="OnboardingContent">
+        <h2>Choose the best 3 that matches your dog</h2>
+
+
+        <button class="surveyBtn2" id="Energetic" onclick="setColor('Energetic')">Energetic</button>
+        <br>
+        <button class="surveyBtn2" id="Submissive" onclick="setColor('Submissive')">Submissive</button>
+        <br>
+        <button class="surveyBtn2" id="Friendly" onclick="setColor('Friendly')">Friendly</button>
+        <br>
+        <button class="surveyBtn2" id="Shy" onclick="setColor('Shy')">Shy</button>
+        <br>
+        <button class="surveyBtn2" id="Unpredictable" onclick="setColor('Unpredictable')">Unpredictable</button>
+        <br>
+        <button class="surveyBtn2" id="Dominant" onclick="setColor('Dominant')">Dominant</button>
+
+
+
+        <button onClick="location.href= 'permissions.html';" type="button" class="signUpBtn"
+            style="margin-top: 30px;">Finish</button>
+    </div>
+
+    <script>
+        var count = 0;
+        function setColor(btn) {
+            var property = document.getElementById(btn);
+            if (property.style.backgroundColor != 'rgb(255, 222, 204)' && count < 3) {
+                property.style.backgroundColor = "#FFDECC";
+                count++;
+            } else {
+                if (property.style.backgroundColor == 'rgb(255, 222, 204)') {
+                    count--;
+                }
+                property.style.backgroundColor = "#F2F4F5";
+                
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

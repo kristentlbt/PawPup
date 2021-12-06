@@ -7,12 +7,36 @@
         height: 100vh;
     }
 
+    .matchscreen{
+        
+        font-family: 'Poppins', sans-serif;
+        
+        text-align: center;
+        height: 50vh;
+    }
+
+    .matchscreen2{
+        background-color: #E27033;
+     font-family: 'Poppins', sans-serif;
+       border-top-right-radius: 150px;
+       border-top-left-radius: 150px;
+        text-align: center;
+        height: 50vh;
+        font-weight: 200px;
+    }
+
     .SignupImg{
        
         text-align: center;
         margin-bottom: -5px;
         font-family: 'Poppins', sans-serif;
         color: #797777;
+    }
+
+    .SurveyImg{
+        display: inline-block;
+        margin-left: 10px;
+    margin-bottom: -5px;
     }
 
     .signupTxt{
@@ -74,6 +98,21 @@
         color:white;
     }
 
+    .sendMsg{
+        background-color: #3E92CC;
+        font-family: 'Poppins', sans-serif;
+        border: white;
+        border-radius: 5px;
+        padding: 8px 16px;
+        width: 30%;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: medium;
+        margin-top: 100px;
+        color:white;
+        
+    }
+
     .signUpBtn:active{
         background-color: #3E92CC;
     }
@@ -83,5 +122,34 @@
       
         font-family: 'Poppins', sans-serif;
         
+    }
+
+    .surveyBtn{
+        background-color: #F2F4F5;
+        font-family: 'Poppins', sans-serif;
+        border: white;
+        border-radius: 8px;
+        padding: 8px 28px;
+        width: 80%;
+        font-weight: 400;
+        text-decoration: none;
+        margin-top: 4px;
+    }
+
+    .surveyBtn2{
+        background-color: #F2F4F5;
+        font-family: 'Poppins', sans-serif;
+        border: white;
+        border-radius: 8px;
+        padding: 8px 28px;
+        width: 80%;
+        font-weight: 400;
+        text-decoration: none;
+        margin-top: 30px;
+    }
+
+    .surveyBtn2:active{
+        background-color: #E27033;
+       
     }
 }

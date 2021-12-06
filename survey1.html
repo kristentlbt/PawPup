@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Raleway:wght@300;400&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <div class="SignupImg">
+
+        <img class="SurveyImg" src="images/progress1.png" alt="progressbar" style="width:70%; padding-top: 20px;">
+        <p class="SurveyImg">Skip</p>
+    </div>
+
+    <div class="OnboardingContent">
+        <h2>Preferences</h2>
+        <p style="font-size: smaller; color:#6C7072">So we can recommend the best playmates!</p>
+        <button class="surveyBtn" id="FullyVaccinated" onclick="setColor('FullyVaccinated')"> Fully Vaccinated</button>
+        <br>
+        <button class="surveyBtn" id="IndoorTime" onclick="setColor('IndoorTime')">Indoor Time</button>
+        <br>
+        <button class="surveyBtn" id="OutdoorTime" onclick="setColor('OutdoorTime')">Outdoor Time</button>
+        <br>
+        <button class="surveyBtn" id="DurableToys" onclick="setColor('DurableToys')">Durable Toys</button>
+        <br>
+        <button class="surveyBtn" id="NoToys" onclick="setColor('NoToys')">No Toys</button>
+        <br>
+        <button class="surveyBtn" id="IndoorTime" onclick="setColor('IndoorTime')">Indoor Time</button>
+        <br>
+        <button class="surveyBtn" id="BiggerDogs" onclick="setColor('BiggerDogs')">Bigger Dogs</button>
+        <br>
+        <button class="surveyBtn" id="SmallerDogs" onclick="setColor('SmallerDogs')">Smaller Dogs</button>
+        <br>
+        <button class="surveyBtn" id="Active" onclick="setColor('Active')">Active</button>
+        <br>
+        <button class="surveyBtn" id="Relaxed" onclick="setColor('Relaxed')">Relaxed</button>
+        <br>
+        <button class="surveyBtn" id="Puppies" onclick="setColor('Puppies')">Puppies</button>
+        <br>
+        <button class="surveyBtn" id="OlderDogs" onclick="setColor('OlderDogs')">Older Dogs (6 and up)</button>
+        <button onClick="location.href= 'survey2.html';" type="button" class="signUpBtn">Next</button>
+    </div>
+
+    <script>
+        function setColor(btn){
+            var property = document.getElementById(btn);
+            if(property.style.backgroundColor != 'rgb(255, 222, 204)'){
+                property.style.backgroundColor = "#FFDECC";
+            }else{
+                property.style.backgroundColor = "#F2F4F5";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

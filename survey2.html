@@ -20,52 +20,38 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <div class="SignupImg">
-        <img src="images/logo-blue.png" alt="logo" style="width:50%">
+
+        <img class="SurveyImg" onClick="location.href= 'survey1.html';" src="images/progress2.png" alt="progressbar" style="width:70%; padding-top: 20px;">
+        <p class="SurveyImg">Skip</p>
     </div>
 
     <div class="OnboardingContent">
-        <img src="images/onboarding3.png" alt="onboardingimg" style="width:70%">
-        <h2>Chat, Confirm, and Enjoy a Playdate!</h2>
-        <p>Get to know your new friend by setting up a playdate.</p>
-        <img src="images/Ellipses3.png" alt="Ellipses" style="margin-top: 20px;">
+        <h2>Tell Us Your Goal</h2>
+        <p style="font-size: smaller; color:#6C7072">We will recommend appropriate furry friends to meet your needs!</p>
+        
+        <button class="surveyBtn2" id="Meet a temporary playmate" onclick="setColor('Meet a temporary playmate')">Meet a temporary playmate</button>
+        <br>
+        <button class="surveyBtn2" id="Meet a long term playmate" onclick="setColor('Meet a long term playmate')">Meet a long term playmate</button>
+        <br>
+        <button class="surveyBtn2" id="Meet overnight playmate" onclick="setColor('Meet overnight playmate')">Meet overnight playmate</button>
+
+       
+     
+        <button onClick="location.href= 'survey3.html';" type="button" class="signUpBtn" style="margin-top: 30px;">Next</button>
     </div>
 
     <script>
-        document.querySelector('body').addEventListener('touchstart', handleTouchStart);
-        document.querySelector('body').addEventListener('touchmove', handleTouchMove);
-
-        var xDown = null;
-
-        function getTouches(ev) {
-            return ev.touches;
-        }
-
-        function handleTouchStart(ev) {
-            const firstTouch = getTouches(ev)[0];
-            xDown = firstTouch.clientX;
-            console.log(xDown);
-        }
-
-        function handleTouchMove(ev) {
-            if( !xDown){
-                return;
-            }
-
-            var xUp = ev.touches[0].clientX;
-
-            var xDiff = xDown-xUp;
-
-           
-            if(xDiff <=-100){
-                location.href= 'onboarding2.html';
+        function setColor(btn){
+            var property = document.getElementById(btn);
+            if(property.style.backgroundColor != 'rgb(255, 222, 204)'){
+                property.style.backgroundColor = "#FFDECC";
+            }else{
+                property.style.backgroundColor = "#F2F4F5";
             }
         }
-        xDown = null;
-
     </script>
-<div class = "SignupImg">
-<button onClick = "location.href= 'survey1.html';" type = "button" class = "signUpBtn">Continue</button>
-</div>
+
+
 
 </body>
 
